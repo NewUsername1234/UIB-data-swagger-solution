@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(90deg, #ffb8c8, #acd6e8);
+}
+
+main {
+    flex-basis: 80%;
+    background-color: white;
+    text-align: center;
+    font-family: sans-serif;
+    border-radius: 3px;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: initial;
+}
+
+label {
+    margin-top: 3px;
+    font-size: 0.7rem;
+}
+
+label[for="email"], label[for="comments"]{
+    margin-top: 10px;
+}
+
+input[type="email"]:focus, textarea:focus {
+    border: 1px solid blue;
+    box-shadow: 0 0 3px blue;
+}
+
+input[type="text"]:focus {
+    border: 1px solid pink;
+    box-shadow: 0 0 3px pink;
+}
+
+section {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+
+input[type="submit"] {
+    align-self: center;
+    padding: 3px 30px;
+    background-color: white;
+    border: 1px solid grey;
+}
+
+
+/* box around the slider */
+.switch {
+    position: relative;
+    left: 0.5rem;
+    width: 3rem;
+    height: 1.4rem;
+  }
+  
+  /* hide checkbox */
+  .switch input {
+    display: none;
+  }
+  
+  /* slider background */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+
+    border-radius: 1rem;
+  }
+  
+  /* slider dot */
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.0rem;
+    width: 1.0rem;
+    left: 0.2rem;
+    bottom: 0.2rem;
+    background-color: white;
+    transition: .4s;
+
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    left: 1.8rem;
+  }
+  
