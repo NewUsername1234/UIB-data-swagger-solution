@@ -36,16 +36,21 @@ label[for="email"], label[for="comments"]{
     margin-top: 10px;
 }
 
-input[type="email"]:focus, textarea:focus {
-    outline: 0.5px solid rgb(0,0,255);
-    border: 0.5px solid blue;
+input[type="email"]:focus {
+    outline: none;
+    border: 2px solid blue;
     box-shadow: 0 0 5px blue;
 }
 
 input[type="text"]:focus {
-    outline: 0.5px solid rgb(255,192,203);
-    border: 0.5px solid pink;    
+    outline: none;
+    border: 2px solid pink;    
     box-shadow: 0 0 5px pink;
+}
+
+textarea:focus {
+    outline: none;
+    border: 1px solid blue;
 }
 
 section {
